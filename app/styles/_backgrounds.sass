@@ -31,10 +31,10 @@ article
     height: 100%
 
   // use ::before for gifs (small size, scaled up)
-  &.waves::before
-    +transform(scale(6.5))
-    +filter(blur(1px) grayscale(0.3) brightness(0.4 * $brightnessFactor))
-    background-image: url('http://stream1.gifsoup.com/view/609536/beach-waves-o.gif')
+  &.waves::after
+    +transform(scale(1.2))
+    +filter(blur(0.5px) grayscale(0.3) brightness(0.4 * $brightnessFactor))
+    background-image: url('../images/nasa_green.jpg')
   // &.chuck::before
     // background-image: url('http://holykkphils.files.wordpress.com/2011/06/chuck-norris-approved.gif')
   // &.approve::before
